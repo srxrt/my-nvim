@@ -1,0 +1,10 @@
+vim.opt.number = true -- Show line numbers
+vim.opt.relativenumber = true -- Relative line numbers
+vim.opt.tabstop = 2 -- 4 spaces for tabs
+vim.opt.shiftwidth = 2 -- 4 spaces when indenting
+vim.opt.expandtab = true -- Use spaces instead of tabs
+vim.opt.smartindent = true
+vim.opt.wrap = true
+vim.opt.cursorline = true
+vim.opt.termguicolors = true -- Enable true colors
+vim.opt.clipboard = "unnamedplus" -- Use system clipboard
