@@ -1,0 +1,18 @@
+version: "3.9"
+
+services:
+  nvim:
+    build: .
+    container_name: dev-nvim
+    command: bash
+    volumes:
+      - ./neovim-config:/root/.config/nvim # Mount your Neovim config
+      - nvim-data:/root/.local/share/nvim # Persist plugins
+      - nvim-state:/root/.local/state/nvim # Persist plugin state
+    working_dir: /root/.config/nvim # Start inside the config folder
+    stdin_open: true
+    tty: true
+
+volumes:
+  nvim-data:
+  nvim-state:
